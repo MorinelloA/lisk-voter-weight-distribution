@@ -26,7 +26,7 @@ function getDistribution()
   .then((out) => {
     for(let i = 0; i < out.data.voters.length; i++)
     {
-      document.getElementById("data").innerHTML += "<label class='col-1 col-form-label'>" + (i + 1 + offset) + "</label><label class='col-5 col-form-label'>" + out.data.voters[i].address  + "</label><label class='col-3 col-form-label'>" + Number(out.data.voters[i].balance / 100000000).toLocaleString() + "</label><br />"
+      document.getElementById("data").innerHTML += "<label class='col-1 col-form-label'>" + (i + 1 + offset) + "</label><label class='distribution col-5 col-form-label'><a target='_blank' href='https://explorer.lisk.io/address/" + out.data.voters[i].address  + "'>" + out.data.voters[i].address  + "</a></label><label class='col-3 col-form-label'>" + Number(out.data.voters[i].balance / 100000000).toLocaleString() + "</label><br />"
     }
     if(offset + 100 < out.data.votes)
     {

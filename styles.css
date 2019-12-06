@@ -18,6 +18,22 @@ a:hover {
   color: #ffffff;
 }
 
+.distribution a {
+  color: #000000;
+}
+
+.distribution a:link {
+  color: #000000;
+}
+
+.distribution a:visited {
+  color: #000000;
+}
+
+.distribution a:hover {
+  color: #000000;
+}
+
 #loading {
   display: none;
 }
